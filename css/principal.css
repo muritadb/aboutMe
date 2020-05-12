@@ -1,0 +1,44 @@
+body  {
+    background: #B0E0E6;
+    height: 100vh;
+    width: 940px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: teal;        
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    background-color: cornsilk;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.site-subtitle,
+.site-title {
+    
+    font-weight: bold;
+    text-align: center;
+       
+}
+
+.site-subtitle {
+    font-style: italic;
+}
+
