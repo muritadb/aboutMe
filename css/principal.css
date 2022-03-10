@@ -1,44 +1,91 @@
-body  {
-    background: #B0E0E6;
-    height: 100vh;
-    width: 940px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: teal;        
-    font-weight: bold;
-    text-decoration: none;
-
+:root {
+   --header-bg-color: #b069ff;
+   --main-bg-color: #00e1ff;
+   --bg-color-dark: #9e5ee5;
+   --font-bg-color: #aaa;
+   --footer-bg-color: #000;
+   --font-size: 18px;
 }
 
-a:hover {
-    text-decoration: underline;
+header {
+    height: 20vh;
+    background-color: var(--header-bg-color);
+    display: flex;
+    align-items: center;
 }
+
+.site-title {
+    font-size: 36px;
+    color: var(--main-bg-color);
+    border: 1px dashed var(--main-bg-color);
+    padding: 3%;
+    align-self: left;
+}
+
 
 .menu {
-    background-color: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
-}
-
-.menu li {
+    width: 50vw;
+    justify-content: end;
+    padding: 3%;
+    gap: 20px;
     list-style: none;
+
 }
 
-.site-subtitle,
-.site-title {
+.menu ul li {
+    padding:5%;
+    cursor: pointer;
+}
+
+.menu-link {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    font-size: var(--font-size);
+    transition:  0.98s;
     
-    font-weight: bold;
-    text-align: center;
-       
 }
 
-.site-subtitle {
-    font-style: italic;
+.menu-link:hover {
+    text-decoration: solid;
+    color: black;
+    border:1px solid var(--bg-color-dark);
+    border-radius: 8px;
+    padding: 8px;
 }
 
+
+.main-container {
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    padding: 10%;
+}
+
+
+
+
+
+.footer {
+    background-color: var(--footer-bg-color);
+    height: 250px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
