@@ -7,10 +7,10 @@
 }
 
 :root {
-   --header-bg-color: #b069ff;
-   --main-bg-color: #00e1ff;
+   --header-bg-color: #061e3a;
+   --main-bg-color: #04182e;
    --bg-color-dark: #9e5ee5;
-   --font-bg-color: #aaa;
+   --font-bg-color: #00ff7f;
    --footer-bg-color: #000;
    --font-size: 18px;
 }
